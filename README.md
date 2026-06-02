@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mutual Fund Analysis - Capstone Project
 
 A comprehensive data analysis project for mutual fund scheme performance, NAV tracking, and data validation using Python and pandas.
@@ -209,3 +210,6 @@ For issues or questions:
 
 **Last Updated:** June 2, 2026
 **Project Status:** Active Development
+=======
+# mutual-funds
+>>>>>>> 2a53103b477bd7c2d02b18542139fb6305c78e25
