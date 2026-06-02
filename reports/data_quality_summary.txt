@@ -1,0 +1,39 @@
+=== Data Quality Summary ===
+
+Dataset 01_fund_master.csv: shape=(40, 15)
+  Missing values: none
+Dataset 02_nav_history.csv: shape=(46000, 3)
+  Missing values: none
+Dataset 03_aum_by_fund_house.csv: shape=(90, 5)
+  Missing values: none
+Dataset 04_monthly_sip_inflows.csv: shape=(48, 6)
+  Missing values: yoy_growth_pct=12
+Dataset 05_category_inflows.csv: shape=(144, 3)
+  Missing values: none
+Dataset 06_industry_folio_count.csv: shape=(21, 6)
+  Missing values: none
+Dataset 07_scheme_performance.csv: shape=(40, 19)
+  Missing values: none
+Dataset 08_investor_transactions.csv: shape=(32778, 13)
+  Missing values: none
+Dataset 09_portfolio_holdings.csv: shape=(322, 8)
+  Missing values: none
+Dataset 10_benchmark_indices.csv: shape=(8050, 3)
+  Missing values: none
+
+Live NAV fetch results:
+  Requested HDFC Top 100 Direct (125497) -> Actual SBI Small Cap Fund - Direct Plan - Growth (125497): 3091 records -> nav_live_125497_SBI_Small_Cap_Fund___Direct_Plan___Growth.csv
+  Requested SBI Bluechip (119551) -> Actual Aditya Birla Sun Life Banking & PSU Debt Fund  - DIRECT - IDCW (119551): 3236 records -> nav_live_119551_Aditya_Birla_Sun_Life_Banking_&_PSU_Debt_Fund____DIRECT___IDCW.csv
+  Requested ICICI Bluechip (120503) -> Actual Axis ELSS Tax Saver Fund - Direct Plan - Growth Option (120503): 3307 records -> nav_live_120503_Axis_ELSS_Tax_Saver_Fund___Direct_Plan___Growth_Option.csv
+  Requested Nippon Large Cap (118632) -> Actual Nippon India Large Cap Fund - Direct Plan Growth Plan - Growth Option (118632): 3298 records -> nav_live_118632_Nippon_India_Large_Cap_Fund___Direct_Plan_Growth_Plan___Growth_Option.csv
+  Requested Axis Bluechip (119092) -> Actual HDFC Money Market Fund - Growth Option - Direct Plan (119092): 3565 records -> nav_live_119092_HDFC_Money_Market_Fund___Growth_Option___Direct_Plan.csv
+  Requested Kotak Bluechip (120841) -> Actual quant Mid Cap Fund - Growth Option - Direct Plan (120841): 3301 records -> nav_live_120841_quant_Mid_Cap_Fund___Growth_Option___Direct_Plan.csv
+fund_house: 10 unique values
+category: 2 unique values
+sub_category: 12 unique values
+risk_category: 5 unique values
+AMFI column: amfi_code
+  Unique AMFI codes: 40
+  Lengths: {6: 40}
+  Prefix sample: {'11': 14, '12': 11, '10': 9, '14': 6}
+AMFI validation: 0 missing of 40 codes
