@@ -4,9 +4,13 @@ import numpy as np
 from sqlalchemy import create_engine
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_DIR = ROOT / "capstone_project" / "data" / "raw"
+RAW_DIR = ROOT / "data" / "raw"
 PROCESSED_DIR = ROOT / "data" / "processed"
 DB_PATH = ROOT / "bluestock_mf.db"
+
+# Fallback: if raw source files are not present, use the processed folder as input.
+if not RAW_DIR.exists() or not any((RAW_DIR / f"{name}.csv").exists() for name in ["01_fund_master", "02_nav_history"]):
+    RAW_DIR = PROCESSED_DIR
 
 NAV_FILE = "02_nav_history.csv"
 TX_FILE = "08_investor_transactions.csv"
@@ -25,6 +29,7 @@ VALID_KYC = {"Verified", "Pending"}
 
 
 def ensure_dirs():
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 
